@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/widgets/drawer.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -10,14 +11,20 @@ class HomePage extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text("Catalogue App"),
+   
+        title: Text("Catalogue App",
+        
+        ),
       ),
       body: Center(
         child: Container(
           child: Text("$days days of $name challenge"),
         ),
       ),
-      drawer:Drawer(),
+      drawer:MyDrawer(
+
+
+      ),
     );
   }
 }
